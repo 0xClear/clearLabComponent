@@ -2,7 +2,7 @@ import React from "react";
 export const Table=(props)=>{
     const {theaders, data, columns}= props;
     return <div>
-        <table border="1px" >
+        <table className="table" >
             <thead>
                 <tr>
                     {
