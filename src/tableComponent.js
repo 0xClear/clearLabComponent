@@ -3,7 +3,7 @@ export const Table=(props)=>{
     const {theaders, data, columns}= props;
     return <div>
         <table className="table" >
-            <thead>
+            <thead scope="col">
                 <tr>
                     {
                         theaders.map(
@@ -18,7 +18,7 @@ export const Table=(props)=>{
                 {
                     data.map(
                         (dataValue, dataIndex)=>{
-                            return <tr>
+                            return <tr key={dataIndex} >
                                 {
                                     columns.map(
                                         (value, index)=>{
