@@ -15,6 +15,7 @@
         const fnClick=(accordianItemNo)=>{
             if(activeAccordianItemNo==accordianItemNo){
                 setActiveAccordianItemNo(-1)
+                
             }else{
                 setActiveAccordianItemNo(accordianItemNo)
             }
